@@ -1,0 +1,326 @@
+:root {
+  --dark-blue: #171836;
+  --light-red: #f5443b;
+  --small-font: 14px;
+  --normall-font: 18px;
+  --big-font: 20px;
+  --bigger-font: 36px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--dark-blue);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header__inners {
+  display: flex;
+  justify-content: space-between;
+  margin: 19px 0 56px 0;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__nav-list {
+  display: flex;
+  margin-left: 148px;
+  column-gap: 44px;
+}
+.nav__links {
+  font-size: var(--small-font);
+  color: rgba(255, 255, 255, 0.6);
+}
+.nav__active {
+  color: #fff;
+  font-weight: 500;
+}
+.header__right {
+  display: flex;
+  column-gap: 31px;
+}
+.header__lang {
+  display: flex;
+  align-items: center;
+}
+.lang__text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #d1d1d7;
+  margin-right: 4px;
+}
+.lang__change {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+.login__btn {
+  outline: none;
+  border: none;
+  background-color: var(--light-red);
+  font-size: var(--small-font);
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 6px;
+}
+.header__bottom-inners {
+  display: flex;
+}
+.header__bottom-left {
+  flex: 1;
+  background-image: url(../images/women.png);
+  background-position: right;
+  position: relative;
+}
+.header__bottom-right {
+  flex: 1;
+}
+.title {
+  font-size: 56px;
+  letter-spacing: -0.01em;
+  color: #fff;
+  line-height: 130%;
+  font-weight: 600;
+}
+.header__bottom-right-text {
+  font-size: var(--normall-font);
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 24px 0 56px 0;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  background-color: #1f2143;
+  width: 506px;
+  justify-content: space-between;
+}
+.header__search-input {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 22px 20px 22px 32px;
+  color: #fff;
+  font-size: 16px;
+}
+.search__icon {
+  padding: 10px;
+  background-color: #282b57;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+.suggestions__title {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 48px 0 34px;
+  font-size: var(--normall-font);
+}
+.suggestions__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.suggestions__text {
+  font-size: var(--small-font);
+  color: rgba(154, 156, 203, 0.6);
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(154, 156, 203, 0.6);
+}
+.header__bottom-persons{
+  width: 363px;
+  height: 92px;
+  position: absolute;
+  right: 50px;
+  bottom: -35px;
+  background: linear-gradient(180deg, rgba(76, 94, 157, 0.8) -32.08%,
+   rgba(23, 24, 54, 0.8) 127.36%);
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+}
+.bottom__persons{
+  position: relative;
+}
+.bottom__persons-img{
+  position: absolute;
+}
+.bottom__persons-img:last-child{
+  /* width: 52px;
+  height: 52px; */
+  padding: 11px;
+  border-radius: 50%;
+  left: 144px;
+  border: 3px solid #6668aa;
+  background-color: #8087B8;
+}
+.bottom__persons-text{
+  color: #BBBBC4;
+  font-size: var(--small-font);
+  font-weight: 500;
+  position: absolute;
+  right: 20px;
+  top: 28px;
+}
+.bottom__persons-text span{
+  color: var(--light-red);
+  font-weight: 600;
+}
+.bottom__persons-img:nth-child(2){
+  left: 36px;
+}
+.bottom__persons-img:nth-child(3){
+  left: 72px;
+}
+.bottom__persons-img:nth-child(4){
+  left: 108px;
+}
+.header__bottom-img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+}
+.img-lamp{
+  padding: 6px 8px;
+  border-radius: 20px;
+  top: 48px;
+  background: linear-gradient(180deg, rgba(76, 94, 157, 0.9) -32.08%, rgba(23, 24, 54, 0.9) 127.36%);
+}
+.header__bottom-img{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  
+}
+.img-book{
+  left: 426px;
+  padding: 6px 8px;
+  border-radius: 20px;
+  right: 0;
+  background: linear-gradient(180deg, rgba(76, 94,
+   157, 0.9) -32.08%, rgba(23, 24, 54, 0.9) 127.36%);
+}
+.footer__bottom-inners{
+  display: flex;
+  margin-top: 120px;
+  gap: 20px;
+}
+.footer__bottom-left{
+  display: flex;
+  column-gap: 17px;
+}
+.right__items{
+  margin-bottom: 23px;
+  top: 120px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer__bottom-img{
+  border-radius: 40px;
+}
+.courses{
+  position: relative;
+  /* text-align: center; */
+  margin-top: 169px;
+}
+.courses__title{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+.course__main{
+  margin-top: 20px;
+  margin-bottom: 29px;
+  border: 1px solid #292B56;
+}
+.course__img-text{
+  position: absolute;
+  margin-top: -40px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.courses__text{
+  text-align: center ;
+  margin-bottom: 80px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.courses__cards{
+  display: flex;
+  gap: 32px;
+}
+.courses__items{
+  padding: 12px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.17) 100%);;
+}
+.course__group{
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+.course__card-text{
+  margin-top: 10px;
+}
+.course__mentor{
+  display: flex;
+  margin-top: 29px;
+}
+.course__acces{
+  margin-left: 59px;
+  margin-top: 28px;
+  align-items: center;
+  padding: 12px 32px;
+  background: #F5443B;
+  border-radius: 6px;
+}
+.course__classes{
+  padding: 12px 32px;
+  margin-left: 578px;
+  background-color: #F5443B;
+  border-radius: 6px;
+  margin-top: 137px;
+}
+.webinar__mentor{
+  margin-top: 81px;
+  margin-bottom: 109px;
+  border: 1px solid #292B56;
+  background: #171836;
+}
+.webinar__title{
+  text-align: center;
+  left: 535px;
+  top: 109px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.webinar__text{
+  text-align: center;
+  left: 383px;
+  top: 183px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.webinar__designer-img{
+  margin-top: 104px;
+}
+.webinar__vidioes{
+  color: #D1D1D7;
+  margin-top: 56px;
+  margin-left: 999px;
+}
+.webinar__stream{
+  border: 1px solid #292B56;   
+}
+.choose__tile{
+  margin-top: 85px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
