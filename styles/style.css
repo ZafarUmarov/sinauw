@@ -437,6 +437,7 @@ body {
   width: 1200px;
   height: 434px;
   overflow: hidden;
+  margin-top: 80px;
   display: flex;
   border-radius: 40px;
   background: linear-gradient(102.01deg, #23265C 1.96%, #352A56 101.68%);
@@ -552,9 +553,10 @@ body {
   left: 15px;
 }
 .right__bottom-users{
-  position: absolute;
+  position: relative;
 }
 .left__top{
+  position: absolute;
   left: -63px;
   top: 77px;
   background: url(.jpg), rgba(255, 255, 255, 0.2);
@@ -562,10 +564,12 @@ body {
   border-radius: 16px;
 }
 .left__center{
+  position: absolute;
   margin-left: -40px;
   margin-top: 175px;
 }
 .right__center{
+  position: absolute;
   margin-left: 270px;
   margin-top: 212px;
 }
@@ -627,4 +631,82 @@ body {
   color: #8F91D0;
   margin-top: 80px;
   margin-bottom: 30px;
+}
+.header__mob-btn{
+  z-index: 50;
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  align-self: flex-end;
+}
+.header__mob-btn:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top: -15px;
+  background-color: #000;
+  border-radius: 10px;
+}
+.header__mob-btn:after{
+  border-radius: 10px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  bottom: -15px;
+  background-color: #000;
+}
+.mob__nav{
+  position: absolute;
+  flex-direction: column;
+  margin-top: 25px;
+  display: none;
+  left: 0;
+  background-color: aqua;
+  width: 100%;
+  align-items: center;
+}
+.mob__nav > a {
+  padding: 15px 20px;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--red);
+  margin: 8px 10px;
+}
+.header__mob{
+  display: none;
+}
+.header__mob-close-btn{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+}
+.show__close-btn{
+  visibility: visible;
+  opacity: 1;
+}
+.header__mob-close-btn:before{
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 100%;
+  background-color: #352A56;
+  transform: rotate(45deg);
+}
+.header__mob-close-btn:after{
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 100%;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+.header__links{
+  box-shadow: 6px 7px 9px 2px #f1f1f1;
 }

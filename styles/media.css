@@ -1,0 +1,29 @@
+@media(max-width: 1000px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .header__nav, 
+    .header__right{
+        display: none;
+    }
+    .mob__nav > a {
+        padding: 10px 15px;
+    }
+    .header__mob{
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+    .active{
+        display: flex;
+    }
+    .falsy{
+        opacity: 0;
+    }
+    .close__btn{
+        position: absolute;
+        top: 12px;
+        right: 0;
+    }
+}
