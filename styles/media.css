@@ -26,4 +26,46 @@
         top: 12px;
         right: 0;
     }
+    .header__bottom-left{
+        display: none;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .header__search{
+        width: 100%;
+    }
+    .header__bottom-right-text{
+        margin-bottom: 24px;
+    }
+    .suggestions__title{
+        margin: 15px 0;
+    }
+    .suggestions__items{
+        gap: 12px;
+    }
+    .footer__bottom-inners{
+        margin-top: 40px;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .courses{
+        margin-top: 50px;
+    }
+    .courses__text{
+        margin-bottom: 40px;
+    }
+    .courses__cards{
+        flex-wrap: wrap;
+    }
+    .carts__bottom-img{
+        width: 100%;
+    }
+    .courses__items{
+        width: 100%;
+    }
+    .header__search-input{
+        padding: 10px;
+        min-width: 130px;
+    }
 }

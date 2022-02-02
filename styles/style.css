@@ -35,10 +35,14 @@ body {
   display: flex;
   margin-left: 148px;
   column-gap: 44px;
+  list-style: none;
 }
 .nav__links {
   font-size: var(--small-font);
   color: rgba(255, 255, 255, 0.6);
+}
+.nav__links:hover{
+  color: #fff;
 }
 .nav__active {
   color: #fff;
@@ -284,10 +288,10 @@ body {
 }
 .course__classes{
   padding: 12px 32px;
-  margin-left: 578px;
   background-color: #F5443B;
   border-radius: 6px;
-  margin-top: 137px;
+  border: none;
+  outline: none;
 }
 .webinar__mentor{
   margin-top: 81px;
