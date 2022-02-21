@@ -714,3 +714,7 @@ body {
 .header__links{
   box-shadow: 6px 7px 9px 2px #f1f1f1;
 }
+.course__btn{
+  text-align: center;
+  margin-top: 121px;
+}
